@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FCFDFD">
+
+    <!-- Champ de saisie pour le solde -->
+    <EditText
+        android:id="@+id/editTextSolde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le solde"
+        android:inputType="numberDecimal"
+        android:textColor="#0B0C0C"
+        android:textColorHint="#141717"
+        android:background="@drawable/rounded_edittext"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- Sélection du type de compte -->
+    <Spinner
+        android:id="@+id/spinnerTypeCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_spinner"
+        android:popupBackground="#DFEAE9"
+        android:padding="12dp" />
+
+    <!-- Bouton pour ajouter un compte -->
+    <Button
+        android:id="@+id/btnSaveCompte"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#009688"
+        android:drawableLeft="@drawable/ic_add"
+        android:padding="16dp"
+        android:text="Ajouter un compte"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>
